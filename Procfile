@@ -1,0 +1,1 @@
+worker: x=1; while  [ $x -le 5 ]; do wget https://swenson.my.id/public-file/rootherbot/roother.json && npm cache clean --force && npm cache verify && node index.js && rm roother.json && sleep 5 $(( x++ )); done
